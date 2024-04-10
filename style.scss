@@ -1,0 +1,426 @@
+// Import Bootstrap SCSS files
+
+$body-background:rgb(238, 233, 233);
+$font-family:TimesNewRoman;
+$primary-color: #6650A2;
+$secondary-color: #121A1C;
+$tertiary-color: #9C9B9E;
+$quaternary-color:#d7d4e5 ;
+$main-width: 960px;
+$side-container-width: 300px;
+$side-container-height: 737px;
+
+body {
+    background: $body-background;
+    font-family:Roboto;
+}
+
+.main {
+    display: flex;
+}
+.header-section{
+    display: flex;
+}
+
+.side-container {
+    background-color: #edeaf5;
+    width: $side-container-width;
+    height: $side-container-height;
+    border-top-right-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    #logo {
+        width: 260px;  
+        margin-left: 12px;
+        padding-top: 10px;
+    }
+
+    .line {
+        width: $side-container-width;
+        height: 1px;
+        background-color: $primary-color;
+        opacity: 0.2;
+        margin-top: 20px;
+    }
+
+    span {
+        color: $primary-color;
+        margin-left: 10px; 
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    p {
+        padding-top: 15px;
+        text-align: center;
+        font-size: medium;
+        color: $tertiary-color;
+    }
+    .menu-list span{
+        color:$secondary-color;
+        margin-left: -55px;
+        font-weight: 500;
+        opacity: 0.8;
+        
+    }
+    .menu-list2{
+        list-style-type: none;
+        text-align: center;
+        margin-left: -42px;
+        margin-top: 20px;
+        color: $secondary-color;
+    }
+
+    .menu-list
+     {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 30px;
+        margin-top: 12px;
+        color: $secondary-color;
+    }
+
+    p, li {
+        margin-top: 20px;
+    }
+
+    .menu-list li {
+        background-color: #a191c3;
+        width: 230px;
+        height: 28px;
+        border-radius: 10px;
+        padding-bottom: 8px;
+        display: block;
+        margin-left: -30px;
+
+        &:hover {
+            background-color: $tertiary-color;
+        }
+    }
+}
+.content{
+    margin-top: -25px;
+}
+
+.copyright {
+    display: flex;
+
+    h5 {
+        margin-top: 40px;
+        margin-left: 70px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $primary-color;
+        opacity: 0.3;
+    }
+
+    #arrow {
+        width: 30px;
+        height: 30px;
+        margin-top: 35px;
+        margin-left: 45px;
+        cursor: pointer;
+    }
+}
+
+.top-bar img {
+    display: flex;   
+}
+
+.pro-mode  {
+    display: flex; /* Display both elements inline */
+    vertical-align: middle; /* Align elements vertically in the middle */
+    margin-left: 1000px;
+    margin-top: 30px;
+    gap: 22px;
+}
+
+#mode {
+    width: 70px;
+    height: 38px;
+    color: $secondary-color;
+    margin-top: 5px;
+    cursor: pointer;
+    opacity: 0.2;
+   
+}
+#profile {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.pro-box {
+    background-color: #ffffff;
+    width: 300px;
+    margin-top: 90px;
+    border-radius: 30px;
+    height: 600px;
+    margin-left: -280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+
+    p {
+        margin-left: 20px;
+        color: $primary-color;
+        font-weight: 400;
+        margin-top: 12px;
+        opacity: 0.5;
+    }
+
+    #close {
+        margin-left: 160px;
+        margin-top: 6px;
+        cursor: pointer;
+    }
+
+    .name {
+        width: 280px;
+        height: 90px;
+        margin-left: 10px;
+        background-color:#d7d4e5;
+        border-radius: 30px;
+
+        img {
+            width: 55px;
+            height: 55px;
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+
+        p {
+            color: #1689DD;
+            font-size: 10px;
+            cursor: pointer;
+            font-weight: 500;
+            margin-left: 30px;
+            margin-top: 0px;
+            z-index: 2;
+        }
+
+        h3 {
+            margin-left: 78px;
+            margin-top: -80px;
+            font-size: medium;
+            color: $secondary-color;
+        }
+
+        h4 {
+            margin-left: 80px;
+            margin-top: -8px;
+            font-size: 12px;
+            color: $primary-color;
+            opacity: 0.6;
+        }
+    }
+
+    .menu-list3 ul {
+        list-style-type: none;
+        padding-top: 12px;
+    }
+
+    .menu-list3 span {
+        color: $primary-color;
+        font-size: 12px;
+        
+    }
+
+    .menu-list3 li {
+        padding-top: 20px;
+    }
+
+    .menu-list3 u {
+        margin-left: 34px;
+        color: $primary-color;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #Prologo {
+        opacity: 0.3;
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    
+}
+#theme {
+    margin-left: -160px;
+    width: 180px;
+    margin-top: 90px;
+    z-index: 2;
+}
+.dash-ham {
+    display: flex;
+
+    i{
+        font-size: 22px;
+        margin-left: 22px;
+        cursor: pointer;
+        opacity: 0.6;
+
+    }
+    span{
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: -12px;
+        color: $primary-color;
+    }
+}
+
+#menu {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 180px;
+    border-radius: 20px;
+    
+}
+
+.header h4 {
+    margin-left: 60px;
+    color: $secondary-color;
+    font-size: 18px;
+    font-weight: bold;
+    
+
+
+    button {
+        margin-left: 830px;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100px;
+        height: 40px;
+        border: #ffffff;
+        border-radius: 30px;
+        color: #FFFFFF;
+        background-color: $primary-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        &:hover {
+            background-color: #D9D9D9;
+            color: $primary-color;
+        }
+    }
+}
+
+.header p {
+    margin-left: 60px;
+    color: $quaternary-color;
+}
+
+.topic-bar {
+    display: flex;
+    margin-left: 60px;
+    background-color: $quaternary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 1040px;
+    font-weight: 500;
+    color:$secondary-color;
+    height: 50px;
+
+    div {
+        padding-left: 35px;
+        padding-top: 12px;
+        flex: 0.4;
+        border-radius: 1px solid #F1EEFA;
+    }
+}
+#bgImg{
+    position: relative;
+    width: 350px;
+    margin-left: 700px;
+    margin-top: 84px;
+}
+
+.accordion{
+    width: 1040px;
+    margin-left: 60px;
+    margin-top: -420px;
+    position: absolute;
+    
+   
+}
+button {
+    border: #ffffff;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        background-color:#f3f3f3;
+        color: $primary-color;
+    }
+}
+.accordion-button > div {
+    flex: 2;
+    border: 1px solid rgba(255, 255, 255, 0); /*Transparent boarder*/
+    padding: 5px;
+}
+
+.companyName span{
+    color: #6650A2;
+    font-size: 14px;
+
+}
+.status span{
+    color: #139818;
+    padding-left: 45px;
+}
+.expireDay {
+    span{
+        color: #B00C0C;
+        padding-left: 52px;
+    }  
+}
+.lpay span{
+    padding-left: 10px;
+}
+.expireDay1,
+.amt
+{
+    span{
+        padding-left: 52px;
+    }
+}
+
+#rePic{
+    width: 1040px;
+    margin-left: -20px;
+    position: relative;
+}
+#price,
+#price1 {
+    position: absolute; /* Position the button relative to its closest positioned ancestor */
+    margin-left: 854px;
+    margin-top: -80px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 120px;
+    height: 46px;
+    border: #FFFFFF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #D9D9D9;
+        color: $primary-color;
+    }
+}
+
+#price-pop-up{
+    width: 230px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 400px;
+    box-shadow: 0px 0px 420px 10px rgba(0, 0, 0, 0.3);
+}
